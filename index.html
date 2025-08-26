@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre - Portafolio de Servicios de Diseño</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <div class="header-top-bar">
+            <button class="hamburger-menu" aria-expanded="false" aria-controls="main-nav">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+                    <li><a href="#mis-servicios">Mis Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-banner-content"> 
+            <h1>Lizzeth Castelblanco</h1>
+            <p>Diseño Gráfico / Animación</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="section-content">
+            <h2>Bienvenido a mi Portafolio</h2>
+            <p>Aquí encontrarás una muestra de mi trabajo en diseño gráfico, edición y animación</p>
+            <div class="media-container">
+                <video controls muted loop>
+                        <source src="Multimedia/Saludo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>Transformo tus ideas en soluciones visuales creativas y efectivas.</p>
+        </section>
+
+        <section id="acerca-de-mi" class="section-content">
+            <h2>Acerca de mí</h2>
+            <div class="about-me-content">
+                <img src="Multimedia/Perfil.jpg" alt="Tu Foto" class="profile-pic">
+                <p>Soy Lizzeth, diseñadora gráfica llena de pasión por la creatividad y el detalle. Mi enfoque principal es la creación y edición de contenido, animación e ilustración.</p>
+                <p>Soy una persona con atención al detalle, alta capacidad de comunicación, resolución de problemas. Me dedicaré a fondo en tu proyecto para entender las necesidades y ofrecerte soluciones ajustadas a tus expectativas.</p>
+            </div>
+        </section>
+
+        <section id="mis-servicios" class="section-content">
+            <h2>Mis Servicios</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Diseño de Identidad de Marca</h3>
+                    <p>Creación de logotipos, paletas de colores, tipografías y guías de estilo para una marca coherente y memorable.</p>
+                    <img src="Multimedia/Marca.png" alt="Muestra diseño de marca">
+                </div>
+                <div class="service-item">
+                    <h3>Creación y Edición de Video</h3>
+                    <p>Ideación, Diseño, Creación y Edición de Videos para Contenido Digital.</p>
+                    <video controls muted loop>
+                        <source src="Multimedia/BarfDog1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="service-item">
+                    <h3>Ilustración Digital</h3>
+                    <p>Creación de ilustraciones personalizadas para diversos propósitos, desde publicaciones hasta materiales de marketing.</p>
+                    <img src="Multimedia/Poster.png" alt="Muestra ilustración">
+                </div>
+                </div>
+            </section>
+
+           <iframe id="" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://w6zvnvjz.forms.app/form/689aa1ae9e623800020f8389" frameborder="0" style="width: 100vw; min-width:100%; height:600px; border:none;"></iframe>
+        <section id="contacto" class="section-content">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="lcastel0109@gmail.com">lcastel0109@gmail.com</a></li>
+                <li><strong>Teléfono:</strong> +57 3505462174</li>
+                <li><strong>Redes Sociales:</strong>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/lizzeth-a-castel/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lizzeth Castelblanco. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.querySelector('.hamburger-menu');
+        const navMenu = document.getElementById('main-nav');
+
+        hamburgerBtn.addEventListener('click', () => {
+        // Alterna las clases 'active' y 'menu-open' al hacer clic
+        hamburgerBtn.classList.toggle('active');
+        navMenu.classList.toggle('menu-open');
+    });
+    </script>
+
+</body>
+</html>
